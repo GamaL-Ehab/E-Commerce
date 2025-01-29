@@ -29,9 +29,11 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              }
+              },
+              "src/assets"
             ],
             "styles": [
+              "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
               "src/styles.scss"
             ],
             "scripts": [],
@@ -72,7 +74,8 @@
               "buildTarget": "E-Commerce:build:production"
             },
             "development": {
-              "buildTarget": "E-Commerce:build:development"
+              "buildTarget": "E-Commerce:build:development",
+              "hmr": false
             }
           },
           "defaultConfiguration": "development"
@@ -103,5 +106,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "98d30661-c9c0-49d4-a7db-641c424c6c76"
   }
 }
