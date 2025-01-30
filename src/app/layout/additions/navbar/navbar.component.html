@@ -1,0 +1,94 @@
+<nav class="border-gray-200 dark:bg-gray-900 bg-gray-200">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <a class="flex items-center space-x-3 rtl:space-x-reverse">
+      <img src="assets/images/freshcart-logo.svg" alt="freshcart-logo" />
+    </a>
+    <button data-collapse-toggle="navbar-default" type="button"
+      class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+      aria-controls="navbar-default" aria-expanded="false">
+      <span class="sr-only">Open main menu</span>
+      <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M1 1h15M1 7h15M1 13h15" />
+      </svg>
+    </button>
+    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+      <ul
+        class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        <li>
+          <a class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-main md:p-0 dark:text-white md:dark:hover:text-main dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+            routerLink="home" routerLinkActive="text-main">Home</a>
+        </li>
+        <li>
+          <a class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-main md:p-0 dark:text-white md:dark:hover:text-main dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+            routerLink="cart" routerLinkActive="text-main">Cart</a>
+        </li>
+        <li>
+          <a class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-main md:p-0 dark:text-white md:dark:hover:text-main dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+            routerLink="products" routerLinkActive="text-main">Products</a>
+        </li>
+        <li>
+          <a class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-main md:p-0 dark:text-white md:dark:hover:text-main dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+            routerLink="categories" routerLinkActive="text-main">Categories</a>
+        </li>
+        <li>
+          <a class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-main md:p-0 dark:text-white md:dark:hover:text-main dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+            routerLink="brands" routerLinkActive="text-main">Brands</a>
+        </li>
+
+        <li>
+          <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+            class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-main md:p-0 md:w-auto dark:text-white md:dark:hover:text-main dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Social
+            Media <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m1 1 4 4 4-4" />
+            </svg></button>
+          <!-- Dropdown menu -->
+          <div id="dropdownNavbar"
+            class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600">
+            <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+              <li>
+                <a
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-indigo-600 md:p-0 dark:text-white md:dark:hover:text-indigo-600 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"><i
+                    class="fa-brands fa-instagram p-2"></i>Instagram</a>
+              </li>
+              <li>
+                <a
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-indigo-600 md:p-0 dark:text-white md:dark:hover:text-indigo-600 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"><i
+                    class="fa-brands fa-facebook p-2"></i>Facebook</a>
+              </li>
+              <li>
+                <a
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-indigo-600 md:p-0 dark:text-white md:dark:hover:text-indigo-600 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"><i
+                    class="fa-brands fa-tiktok p-2"></i>Tiktok</a>
+              </li>
+              <li>
+                <a
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-indigo-600 md:p-0 dark:text-white md:dark:hover:text-indigo-600 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"><i
+                    class="fa-brands fa-twitter p-2"></i>Twitter</a>
+              </li>
+              <li>
+                <a
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-indigo-600 md:p-0 dark:text-white md:dark:hover:text-indigo-600 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"><i
+                    class="fa-brands fa-linkedin p-2"></i>Linkedin</a>
+              </li>
+              <li>
+                <a
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-indigo-600 md:p-0 dark:text-white md:dark:hover:text-indigo-600 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"><i
+                    class="fa-brands fa-youtube p-2"></i>Youtube</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <button type="button"
+        class="text-white bg-main hover:text-main border border-main hover:bg-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-1.5 text-center me-2 mb-2 dark:border-main dark:text-main dark:hover:text-white dark:hover:bg-main dark:focus:ring-main">Login</button>
+      <button type="button"
+        class="text-main hover:text-white border border-main hover:bg-main focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-1.5 text-center me-2 mb-2 dark:border-main dark:text-main dark:hover:text-white dark:hover:bg-main dark:focus:ring-main">Register</button>
+    </div>
+  </div>
+</nav>
