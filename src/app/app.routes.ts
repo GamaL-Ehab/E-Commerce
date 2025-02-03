@@ -5,9 +5,13 @@ import { ProductsComponent } from './layout/pages/products/products.component';
 import { CategoriesComponent } from './layout/pages/categories/categories.component';
 import { BrandsComponent } from './layout/pages/brands/brands.component';
 import { NotFoundComponent } from './layout/additions/not-found/not-found.component';
+import { LoginComponent } from './layout/pages/login/login.component';
+import { RegisterComponent } from './layout/pages/register/register.component';
 
 export const routes: Routes = [
-    {path:'', redirectTo:'home', pathMatch:'full'},
+    {path:'', redirectTo:'login', pathMatch:'full'},
+    {path:'login', component:LoginComponent, title:'Login'},
+    {path:'register', component:RegisterComponent, title:'Register'},
     {path:'home', component:HomeComponent, title:'Home'},
     {path:'cart', component:CartComponent, title:'Cart'},
     {path:'products', component:ProductsComponent, title:'Products'},

@@ -1,1 +1,35 @@
-<p>login works!</p>
+<section class="py-40"> 
+    <form [formGroup]="loginForm" (ngSubmit)="loginSubmit()" class="lg:w-1/2 m-auto px-5 shadow-xl rounded-xl bg-gray-100">
+        <h1 class="text-2xl font-bold text-center mb-3 first-letter:text-main first-letter:text-3xl">Login Now:</h1>
+        @if(errorMsg){
+            <p class="bg-red-500 text-center rounded text-white my-5"><i class="fa-solid fa-circle-exclamation"></i> {{errorMsg}}</p>
+        }
+        <div class="mb-5">
+            <label class="font-semibold" for="email"><i class="fa-solid fa-envelope text-main ps-2"></i> Email:</label>
+            <input formControlName="email" type="email" id="email" placeholder="Enter Your Email.." class="main-input">
+            <div class="text-red-700 ps-1">
+                @if(loginForm.get('email')?.touched){
+                    @if(loginForm.get('email')?.errors?.['required']){
+                        <p><i class="fa-solid fa-circle-exclamation"></i> Email Is Required.</p>
+                    }
+                    @else if(loginForm.get('email')?.errors?.['email']){
+                        <p><i class="fa-solid fa-circle-exclamation"></i> Invalid Email.</p>
+                    }
+                }
+            </div>
+        </div>
+        <div class="mb-5">
+            <label class="font-semibold" for="password"><i class="fa-solid fa-lock text-main ps-2"></i> Password:</label>
+            <input formControlName="password" type="password" id="password" placeholder="Enter Your Password.." class="main-input">
+            <div class="text-red-700 ps-1">
+                @if(loginForm.get('password')?.touched && loginForm.get('password')?.errors?.['required']){
+                    <p><i class="fa-solid fa-circle-exclamation"></i> Password Is Required.</p>
+                }
+            </div>
+        </div>
+
+        <div class="text-center">
+            <button class="main-btn-outline px-5 py-2 font-semibold">Login</button>
+        </div>
+    </form>
+</section>        
